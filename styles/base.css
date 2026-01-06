@@ -21,7 +21,7 @@ body {
     font-weight: 400;
     display: grid;
     height: 100vh;
-    grid-template: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
