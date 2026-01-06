@@ -1,7 +1,7 @@
 :root {
     --primary-color: #d4aa7d;
     --secondary-color: #efd09e;
-    --accent-color: #d2d8b3;
+    --accent-color: grey;
 }
 
 * {
@@ -39,7 +39,7 @@ header {
 
 .card {
     border-radius: 8px;
-    border: 2px solid grey;
+    border: 2px solid var(--accent-color);
 }
 
 .about-me {
