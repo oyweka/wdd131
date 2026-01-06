@@ -122,6 +122,10 @@ nav {
     padding: 2rem 1.5rem;
 }
 
+.resources li {
+    margin-bottom: 0.5rem;
+}
+
 footer {
     background-color: var(--primary-color);
     text-align: center;
