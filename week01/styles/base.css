@@ -1,0 +1,135 @@
+:root {
+    --primary-color: #d4aa7d;
+    --secondary-color: #efd09e;
+    --accent-color: #d2d8b3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto;
+}
+
+header {
+    background: var(--primary-color);
+    padding: 2rem 0 0;
+}
+
+.container-card {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card {
+    border-radius: 8px;
+    border: 2px solid grey;
+}
+
+.about-me {
+    display: flex;
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+}
+
+.about-me img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-kenya {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    padding: 2rem 1.5rem;
+}
+
+.about-kenya figure img {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    font-weight: 200;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin: 0;
+    padding: 0.75rem 0;
+}
+
+.card h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+nav {
+    margin: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    color: black;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+}
+
+.navigation a:hover {
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-color: #90a9b7;
+}
+
+.resources {
+    list-style: none;
+    padding: 2rem 1.5rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+}
