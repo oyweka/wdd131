@@ -1,0 +1,23 @@
+@media screen and (min-width: 38rem) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.75rem 1.5rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+}
