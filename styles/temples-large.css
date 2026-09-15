@@ -17,7 +17,7 @@
         display: none;
     }
 
-    header h1 {
+    .site-title {
         text-align: center;
     }
 }
