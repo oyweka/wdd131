@@ -18,6 +18,7 @@ header {
     background-color: #263238;
     color: white;
     padding: 1rem;
+    position: relative;
 }
 
 header h1 {
@@ -26,14 +27,14 @@ header h1 {
 }
 
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 1rem;
 }
 
 main h1 {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 nav {
@@ -104,8 +105,9 @@ figure img {
 }
 
 figcaption {
-    padding: 0.5rem;
-    font-weight: bold;
+    padding: 0.75rem;
+    font-weight: 700;
+    font-family: "Lora", serif;
 }
 
 footer {
