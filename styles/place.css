@@ -73,6 +73,7 @@ section p {
 .weather-icon {
     margin-left: 0.5rem;
     font-size: 1.5rem;
+    display: none;
 }
 footer {
     background-color: var(--primary-color);
@@ -91,9 +92,6 @@ footer p {
     vertical-align: middle;
 }
 
-.weather-icon {
-    display: none;
-}
 .place-info {
     margin-top: 1rem;
     padding: 0.5rem;
