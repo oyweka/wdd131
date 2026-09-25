@@ -1,0 +1,152 @@
+:root {
+    --primary-color: #006600;
+    --secondary-color: #f7f7f7;
+    --accent-color: #000000;
+    --text-color: #222222;
+    --border-color: #cccccc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 1.5rem;
+}
+
+section h2 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+section p {
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.hero {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+}
+.weather {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+}
+.weather p {
+    margin-top: 0.75rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+.weather-icon {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+.weather-svg {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.weather-icon {
+    display: none;
+}
+.place-info {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+}
+
+.place-info p {
+    margin: 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+@media screen and (min-width: 800px) {
+    main {
+        padding: 2rem;
+    }
+
+   main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.hero,
+.weather {
+    width: 100%;
+}
+
+    .weather-svg {
+        display: none;
+    }
+
+    .weather-icon {
+    display: none;
+}
+
+.weather h2::after {
+    content: "⛅";
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}
+}
+body {
+    line-height: 1.5;
+}
+
+h1,
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+a:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+.hero:hover,
+.weather:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
