@@ -18,6 +18,7 @@ body {
     background-color: var(--secondary-color);
     line-height: 1.5;
 }
+
 header {
     background-color: var(--primary-color);
     color: white;
@@ -28,53 +29,62 @@ header {
 header h1 {
     font-size: 2rem;
 }
+
 main {
     max-width: 1100px;
     margin: 0 auto;
     padding: 1rem;
 }
 
-section {
-    margin-bottom: 1.5rem;
+.hero {
+    position: relative;
 }
 
-section h2 {
+.hero picture {
+    display: block;
+    width: 100%;
+}
+
+.hero picture > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.data,
+.weather {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.data h2,
+.weather h2 {
     background-color: var(--primary-color);
     color: white;
     padding: 0.75rem;
     text-align: center;
 }
 
-section p {
-    line-height: 1.6;
-    margin-top: 1rem;
-}
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-.hero {
-    background-color: white;
-    border: 1px solid var(--border-color);
-    padding: 1rem;
-}
-.weather {
-    background-color: white;
-    border: 1px solid var(--border-color);
-    padding: 1rem;
-}
+.data p,
 .weather p {
     margin-top: 0.75rem;
     padding: 0.5rem;
     border-bottom: 1px solid var(--border-color);
 }
+
+.weather-svg {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0.5rem auto;
+}
+
 .weather-icon {
-    margin-left: 0.5rem;
-    font-size: 1.5rem;
     display: none;
 }
+
 footer {
     background-color: var(--primary-color);
     color: white;
@@ -85,63 +95,78 @@ footer {
 footer p {
     margin: 0.5rem 0;
 }
-.weather-svg {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    vertical-align: middle;
-}
 
-.place-info {
-    margin-top: 1rem;
-    padding: 0.5rem;
-    background-color: var(--secondary-color);
-}
-
-.place-info p {
-    margin: 0;
-    padding: 0.5rem;
-    border-bottom: 1px solid var(--border-color);
-}
+/* Wide view */
 @media screen and (min-width: 800px) {
     main {
-        padding: 2rem;
+        max-width: 100%;
+        padding: 0;
     }
 
-   main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-}
+    .hero {
+        position: relative;
+        width: 100%;
+    }
 
-.hero,
-.weather {
-    width: 100%;
-}
+    .hero picture {
+        display: block;
+        width: 100%;
+    }
+
+    .hero picture > img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .data,
+    .weather {
+        position: absolute;
+        z-index: 2;
+        width: 260px;
+        margin: 0;
+        padding: 0.75rem;
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+
+    .data {
+        top: 2rem;
+        left: 1rem;
+    }
+
+    .weather {
+        right: 1rem;
+        bottom: 2rem;
+    }
+
+    .data h2,
+    .weather h2 {
+        padding: 0.5rem;
+    }
+
+    .data p,
+    .weather p {
+        margin-top: 0.3rem;
+        padding: 0.3rem;
+    }
 
     .weather-svg {
-        display: none;
+        display: none !important;
     }
 
     .weather-icon {
-    display: none;
+        display: none;
+    }
+
+    .weather h2::after {
+        content: "⛅";
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+    }
 }
 
-.weather h2::after {
-    content: "⛅";
-    margin-left: 0.5rem;
-    font-size: 1.5rem;
-}
-}
-h1,
-h2 {
-    font-family: Georgia, "Times New Roman", serif;
-}
-a:focus-visible {
-    outline: 3px solid white;
-    outline-offset: 3px;
-}
 .hero:hover,
-.weather:hover {
+.weather:hover,
+.data:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
