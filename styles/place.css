@@ -16,6 +16,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text-color);
     background-color: var(--secondary-color);
+    line-height: 1.5;
 }
 header {
     background-color: var(--primary-color);
@@ -134,10 +135,6 @@ footer p {
     font-size: 1.5rem;
 }
 }
-body {
-    line-height: 1.5;
-}
-
 h1,
 h2 {
     font-family: Georgia, "Times New Roman", serif;
