@@ -1,0 +1,16 @@
+img {
+  display: block;
+  margin: 20px auto;
+  background-color: black;
+  animation: fade 1.5s ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
