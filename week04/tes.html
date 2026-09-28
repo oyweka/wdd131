@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Content Test</title>
+</head>
+
+<body>
+
+  <div id="textContent"></div>
+  <div id="innerHTML"></div>
+
+  <script>
+    const babygender = "boy";
+
+    const textContent = document.querySelector("#textContent");
+    const innerHTML = document.querySelector("#innerHTML");
+
+    textContent.textContent = `🎉 Congratulations! You are having a <strong>${babygender}</strong>!`;
+
+    innerHTML.innerHTML = `🎉 Congratulations! You are having a <strong>${babygender}</strong>!`;
+
+    reveal.text = `🎉 Congratulations! You are having a <strong>${babygender}</strong>!`;
+
+    reveal.HTMLvalue = `🎉 Congratulations! You are having a <strong>${babygender}</strong>!`;
+    
+  </script>
+
+</body>
+</html>
