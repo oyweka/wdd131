@@ -1,113 +1,115 @@
 body {
-    font-family: "Open Sans", sans-serif;
-    color: #263238;
-    background-color: #ffffff;
-    margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #263238;
+  background-color: #ffffff;
+  margin: 0;
 }
 
 header {
-    background-color: #2e7d32;
-    color: #ffffff;
-    padding: 1.5rem;
-    text-align: center;
+  background-color: #2e7d32;
+  color: #ffffff;
+  padding: 1.5rem;
+  text-align: center;
 }
 
 header h1 {
-    color: #ffffff;
+  color: #ffffff;
+  margin: 0;
+  font-size: 2rem;
 }
 
 main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 section {
-    background-color: #e8f5e9;
-    margin-bottom: 1.5rem;
-    padding: 1.5rem;
-    border-radius: 8px;
+  background-color: #e8f5e9;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 8px;
 }
 
 h1,
 h2,
 h3 {
-    font-family: "Roboto", sans-serif;
-    color: #2e7d32;
+  font-family: "Roboto", sans-serif;
+  color: #2e7d32;
 }
 
 .color-sample {
-    background-color: #2e7d32;
-    color: #ffffff;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 5px;
+  background-color: #2e7d32;
+  color: #ffffff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
 }
 
 .color-sample h3 {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .light-green {
-    background-color: #e8f5e9;
-    color: #263238;
+  background-color: #e8f5e9;
+  color: #263238;
 }
 
 .light-green h3 {
-    color: #2e7d32;
+  color: #2e7d32;
 }
 
 .white {
-    background-color: #ffffff;
-    color: #263238;
+  background-color: #ffffff;
+  color: #263238;
 }
 
 .dark-gray {
-    background-color: #263238;
-    color: #ffffff;
+  background-color: #263238;
+  color: #ffffff;
 }
 
 .dark-gray h3 {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 footer {
-    background-color: #2e7d32;
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem;
+  background-color: #2e7d32;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
 }
 
 .font-sample {
-    background-color: #ffffff;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 5px;
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
 }
 
 .roboto-example {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .open-sans-example {
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .wireframe {
-    border: 2px solid #263238;
-    background-color: #ffffff;
-    padding: 1rem;
-    margin: 1rem auto 2rem;
+  border: 2px solid #263238;
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 1rem auto 2rem;
 }
 
 .mobile-wireframe {
-    max-width: 350px;
+  max-width: 350px;
 }
 
 .desktop-wireframe {
-    max-width: 800px;
+  max-width: 800px;
 }
 
 .wire-header,
@@ -115,58 +117,58 @@ footer {
 .wire-hero,
 .wire-content,
 .wire-footer {
-    border: 1px dashed #2e7d32;
-    padding: 1.2rem;
-    margin-bottom: 0.75rem;
-    text-align: center;
+  border: 1px dashed #2e7d32;
+  padding: 1.2rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
 }
 
 .wire-header,
 .wire-footer {
-    background-color: #2e7d32;
-    color: #ffffff;
+  background-color: #2e7d32;
+  color: #ffffff;
 }
 
 .wire-nav {
-    background-color: #e8f5e9;
+  background-color: #e8f5e9;
 }
 
 .wire-hero {
-    min-height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wire-content {
-    background-color: #e8f5e9;
-    min-height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #e8f5e9;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wire-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
 }
 
 .wire-row .wire-content {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .logo {
-    font-family: "Roboto", sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .logo-symbol {
-    font-size: 2.2rem;
-    margin-right: 0.5rem;
+  font-size: 2.2rem;
+  margin-right: 0.5rem;
 }
 
 header p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
