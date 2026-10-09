@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   color: #263238;
@@ -6,8 +7,8 @@ body {
 }
 
 header {
-  background-color: #2e7d32;
-  color: white;
+  background-color: #1b5e20;
+  color: #ffffff;
   padding: 1.5rem;
   text-align: center;
 }
@@ -19,7 +20,7 @@ main {
 }
 
 form {
-  background-color: white;
+  background-color: #e8f5e9;
   padding: 2rem;
   border-radius: 8px;
 }
@@ -42,8 +43,10 @@ textarea {
   box-sizing: border-box;
   padding: 0.7rem;
   margin-top: 0.4rem;
-  border: 1px solid #777;
+  border: 1px solid #595959;
   border-radius: 4px;
+  background-color: #ffffff;
+  color: #263238;
   font: inherit;
 }
 
@@ -74,6 +77,7 @@ legend span {
 input[type="radio"],
 input[type="checkbox"] {
   margin-right: 0.5rem;
+  accent-color: #1b5e20;
 }
 
 textarea {
@@ -85,8 +89,8 @@ input[type="submit"] {
   width: 100%;
   margin-top: 1.5rem;
   padding: 0.8rem;
-  background-color: #2e7d32;
-  color: white;
+  background-color: #1b5e20;
+  color: #ffffff;
   border: none;
   border-radius: 4px;
   font-size: 1rem;
@@ -94,9 +98,20 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+input[type="submit"]:hover {
+  background-color: #174d1b;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid #174d1b;
+  outline-offset: 2px;
+}
+
 footer {
   background-color: #263238;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 1rem;
 }
