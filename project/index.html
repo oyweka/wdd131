@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Learn about rice-growing regions, rice production practices, and farming challenges in Kenya."
+    >
+    <meta name="author" content="Alex Ochieng Oyweka">
+    <title>Home | Kenya Rice Farming</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <a class="site-logo" href="index.html">
+        <span aria-hidden="true">🌾</span>
+        <span>Kenya Rice Farming</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        Menu
+      </button>
+
+      <nav id="primary-navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="areas.html">Rice-Growing Areas</a></li>
+          <li><a href="production.html">Rice Production</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Understanding Rice Farming in Kenya</h1>
+          <p>
+            Explore Kenya's rice-growing regions, learn how rice is produced,
+            and understand the challenges facing rice farmers.
+          </p>
+          <a class="button" href="areas.html">Explore Rice-Growing Areas</a>
+        </div>
+      </section>
+
+      <section class="introduction">
+        <h2>Discover Rice Farming in Kenya</h2>
+        <p>
+          Rice farming is an important part of Kenya's agricultural sector.
+          Understanding where rice is grown and the challenges farmers face help us appreciate the work behind rice production.
+        </p>
+      </section>
+
+      <section class="topic-grid" aria-labelledby="topics-heading">
+        <h2 id="topics-heading">Explore Our Topics</h2>
+
+        <article class="topic-card">
+          <img
+            src="images/mwea-rice-medium.webp"
+            srcset="
+              images/mwea-rice-small.webp 300w,
+              images/mwea-rice-medium.webp 600w,
+              images/mwea-rice-large.webp 1000w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw"
+            alt="Rice fields in Mwea, Kenya"
+            width="600"
+            height="300"
+            loading="lazy"
+          >
+          <div class="topic-content">
+            <h3>Rice-Growing Areas</h3>
+            <p>
+              Discover Kenya's main rice-growing regions and the conditions
+              that support rice cultivation.
+            </p>
+            <a href="areas.html">Learn about growing areas</a>
+          </div>
+        </article>
+
+        <article class="topic-card">
+          <img
+            src="images/rice-production-medium.webp"
+            srcset="
+              images/rice-production-small.webp 300w,
+              images/rice-production-medium.webp 600w,
+              images/rice-production-large.webp 1152w
+            "
+            sizes="(max-width: 600px) 100vw, 50vw"
+            alt="Rice paddy field showing rice growing in the field"
+            width="600"
+            height="300"
+            loading="lazy"
+          >
+          <div class="topic-content">
+            <h3>Rice Production</h3>
+            <p>
+              Learn about land preparation, planting, crop management, and
+              harvesting.
+            </p>
+            <a href="production.html">Explore rice production</a>
+          </div>
+        </article>
+
+        <article class="topic-card">
+          <img
+            src="images/rice-harvest-medium.webp"
+            srcset="
+              images/rice-harvest-small.webp 300w,
+              images/rice-harvest-medium.webp 450w,
+              images/rice-harvest-large.webp 720w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw"
+            alt="Farmers harvesting rice in a rice field"
+            width="450"
+            height="300"
+            loading="lazy"
+          >
+          <div class="topic-content">
+            <h3>Farming Challenges</h3>
+            <p>
+              Understand the production challenges that rice farmers may
+              experience and why they matter.
+            </p>
+            <a href="production.html#challenges">Explore farming challenges</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="extra-topics" aria-labelledby="extra-topics-heading">
+        <h2 id="extra-topics-heading">Explore More Topics</h2>
+        <p>
+          Choose a topic to continue learning about rice farming in Kenya.
+        </p>
+        <ul id="extra-topic-links"></ul>
+      </section>
+
+      <section class="visitor-form" aria-labelledby="visitor-heading">
+        <h2 id="visitor-heading">What Would You Like to Learn?</h2>
+        <p>
+          Choose a topic and tell us what interests you about rice farming.
+        </p>
+
+        <form id="interest-form">
+          <label for="visitor-name">Your name (optional)</label>
+          <input
+            type="text"
+            id="visitor-name"
+            name="visitor-name"
+            autocomplete="name"
+          >
+
+          <label for="interest">Choose a topic</label>
+          <select id="interest" name="interest" required>
+            <option value="">Select a topic</option>
+            <option value="areas">Rice-growing areas</option>
+            <option value="production">Rice production</option>
+            <option value="challenges">Farming challenges</option>
+          </select>
+
+          <button class="button" type="submit">Save My Interest</button>
+        </form>
+
+        <p id="form-message" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="current-year"></span> Kenya Rice Farming</p>
+      <p><a href="references.html">References</a></p>
+    </footer>
+  </body>
+</html>
